@@ -1,12 +1,12 @@
 /**
  * Created by jorgecruz on 3/17/17.
  */
-import { createStore, compose } from 'redux';
+import { createStore, compse } from 'redux';
 import {syncHistoryWithStore} from 'react-router-redux';
 import { browserHistory } from 'react-router'
 
 //import a root reducer
-import rootReducer from './reducer/index';
+import rootReducer from './reducers/index';
 
 //import the data needed for App
 import comments from './data/comments'
@@ -16,11 +16,11 @@ import post from './data/posts'
 
 const defaultState = {
     post,             // This is ES6 syntax. Same as post: post
-    comments
+    comments: comments
 };
 
 const store = createStore(rootReducer, defaultState);
 
-const history = syncHistoryWithStore(browserHistory);
+export const history = syncHistoryWithStore(browserHistory, store);
 
 export default store;

@@ -7,10 +7,10 @@
 
 // 2. Copy pf current state
 
-function comment (state = [], action){
+function comments (state = [], action){
     console.log(state, action);
     return state;
 
 }
 
-export default comment;
+export default comments;
