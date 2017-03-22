@@ -6,6 +6,8 @@
 // 1. The action (info about what happened)
 
 // 2. Copy pf current state
+// The reducer does the editing of the state.
+// Every reducer runs everytime there is an action
 
 function post (state = [], action){
     console.log(state, action);
