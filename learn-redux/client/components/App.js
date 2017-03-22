@@ -7,9 +7,10 @@ import * as actionCreators from '../actions/actionCreators';
 import Main from './Main'
 
 function mapStateToProps(state){
+    console.log('state:', state);
     return {
         post: state.post,
-        state: state.comments
+        comments: state.comments
     }
 }
 

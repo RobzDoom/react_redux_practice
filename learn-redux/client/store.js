@@ -12,11 +12,12 @@ import rootReducer from './reducers/index';
 import comments from './data/comments'
 import post from './data/posts'
 
+
 //Have to create an object for the default data
 
 const defaultState = {
     post,             // This is ES6 syntax. Same as post: post
-    comments: comments
+    comments
 };
 
 const store = createStore(rootReducer, defaultState);

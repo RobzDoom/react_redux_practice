@@ -9,7 +9,10 @@ import { routerReducer } from 'react-router-redux'
 import post from './post'
 import comments from './comments'
 
-const rootReducers = combineReducers({post, comments,
-    routing: routerReducer});
+const rootReducers = combineReducers({
+    post, 
+    comments,
+    routing: routerReducer
+});
 
 export default rootReducers;

@@ -10,7 +10,6 @@
 // Every reducer runs everytime there is an action
 
 function post (state = [], action){
-    console.log(state, action);
     return state;
 
 }
